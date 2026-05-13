@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:clipToPadding="false"
+    tools:context=".MainActivity5">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/card2"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Date du jour -->
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="Mercredi 15 juin 2023"
+                style="@style/text"
+                android:textSize="17sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Cours 1 - Même contenu qu'original -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_marginBottom="1dp"
+                style="@style/card"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <!-- Barre colorée à gauche -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#4386DD"
+                        app:cardCornerRadius="4dp"/>
+
+                    <!-- Heure -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="9h00"
+                        style="@style/text2"/>
+
+                    <!-- Professeur -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Malek Chaouche"
+                        style="@style/text2"/>
+
+                    <!-- Matière -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="54dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Java et d'autres trucs cools aussi"
+                        style="@style/text2"
+                        android:textSize="15sp"/>
+
+                    <!-- Salle -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Salle 10"
+                        style="@style/text2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Cours 2 - Même structure et contenu -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_marginBottom="1dp"
+                style="@style/card"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <!-- Même structure que le cours 1 -->
+                    <!-- Barre colorée -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#4386DD"
+                        app:cardCornerRadius="4dp"/>
+
+                    <!-- Heure -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="11h00"
+                        style="@style/text2"/>
+
+                    <!-- Professeur -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Malek Chaouche"
+                        style="@style/text2"/>
+
+                    <!-- Matière -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Base de données avancées"
+                        style="@style/text2"
+                        android:textSize="15sp"/>
+
+                    <!-- Salle -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Salle 12"
+                        style="@style/text2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Cours 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_marginBottom="1dp"
+                style="@style/card"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <!-- Même structure que précédemment -->
+                    <!-- Barre colorée -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#4386DD"
+                        app:cardCornerRadius="4dp"/>
+
+                    <!-- Heure -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="13h30"
+                        style="@style/text2"/>
+
+                    <!-- Professeur -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Sophie Martin"
+                        style="@style/text2"/>
+
+                    <!-- Matière -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Développement mobile"
+                        style="@style/text2"
+                        android:textSize="15sp"/>
+
+                    <!-- Salle -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Salle 8"
+                        style="@style/text2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Cours 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                style="@style/card"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <!-- Même structure que précédemment -->
+                    <!-- Barre colorée -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:backgroundTint="#4386DD"
+                        app:cardCornerRadius="4dp"/>
+
+                    <!-- Heure -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="15h30"
+                        style="@style/text2"/>
+
+                    <!-- Professeur -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Jean Dupont"
+                        style="@style/text2"/>
+
+                    <!-- Matière -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Algorithmique avancée"
+                        style="@style/text2"
+                        android:textSize="15sp"/>
+
+                    <!-- Salle -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/helveticat"
+                        android:text="Salle 5"
+                        style="@style/text2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViews"
+        android:layout_width="392dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-20dp"
+        android:layout_marginBottom="-20dp"
+        app:itemIconSize="25dp"
+        style="@style/navigation"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_bold"
+        android:text="Emploi du Temps complet"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+    <Button
+        android:id="@+id/button6"
+        style="@style/bouton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/helvetica_bold"
+        android:text="Voir le planning de la semaine"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViews"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

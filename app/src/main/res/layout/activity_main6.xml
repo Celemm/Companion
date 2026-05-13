@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+   style="@style/Screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="253dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/helvetica_bold"
+        android:text="Conditions Générales d'Utilisation (CGU)
+de l’application Itic Companion"
+        android:textAlignment="viewStart"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="292dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="16dp"
+        android:text="Dernière mise à jour :
+Bienvenue sur Itic Companion, l'application officielle de l’Université ITIC Paris, conçue pour offrir aux étudiants un accès simplifié à leur emploi du temps, leurs notes, les programmes scolaires, ainsi qu’un système de classement entre élèves avec carte de profil évolutive.
+En utilisant cette application, vous acceptez sans réserve les présentes Conditions Générales d’Utilisation (ci-après les CGU). Veuillez les lire attentivement."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="149dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="12dp"
+        android:text="1. Objet de l’application"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="283dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="164dp"
+        android:text="L’application Itic Companion est destinée exclusivement aux étudiants et membres autorisés de l’Université ITIC Paris. Elle permet notamment :
+La consultation de l’emploi du temps personnalisé ;
+L’accès aux notes et résultats scolaires ;
+L’affichage des programmes pédagogiques ;
+La participation à un système de classement entre étudiants basé sur des points attribués ;
+L’évolution d’un profil personnel incluant une carte virtuelle liée à la performance académique et à la position dans le classement."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="162dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
